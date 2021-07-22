@@ -1,13 +1,13 @@
 import React from 'react';
 import Imagen from './Imagen';
 
-const Comentario = props => {
+const Comentario = ({ urlImagen, persona, texto }) => {
 	return (
 		<div className='d-flex'>
-			<Imagen urlImagen={props.urlImagen} />
+			<Imagen urlImagen={urlImagen} />
 			<div className='media-body'>
-				<h5 className='mt-0'>{props.persona}</h5>
-				{props.texto}
+				<h5 className='mt-0'>{persona}</h5>
+				{texto}
 			</div>
 		</div>
 	);
